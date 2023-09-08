@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.baidu.com/s" target="_self" method="get">
+        <!-- method="get" 明文请求 -->
+        <!-- target="_self" 当前页面 -->
+        <input type="text" name="wd">
+        <button>去百度搜索</button>
+    </form>
+    <br>
+    <form action="https://search.jd.com/search" target="_blank">
+        <!-- target="_blank" 建立一个新的页面 -->
+        <input type="text" name="keyword">
+        <button>去京东搜索</button>
+    </form>
+    <br>
+    <form action="">
+        账户：<input type="text" placeholder="账户" value="zhangsan" maxlength="10"><br>
+        <!-- value="zhangsan" 文本框默认值
+        maxlength="10"  最大长的度为10 -->
+        密码：<input type="password" placeholder="密码" maxlength="20"><br>
+        性别：<input type="radio" name="sex" value="nan">男
+        <input type="radio" name="sex" value="nv" checked>女
+        <!-- 单选框： checked=默认值 -->
+        <br>
+        爱好：<input type="checkbox" name="hobby" value="smoke">吸烟
+        <input type="checkbox" name="hobby" value="drink">喝酒
+        <input type="checkbox" name="hobby" value="perm">烫头
+        <!-- 多选框 -->
+        <br>
+        <!-- 文本框  -->
+        自我介绍：<textarea name="ziwjieshao" cols="30" rows="10"></textarea>
+        <br>
+        籍贯：<select name="jiguan" >
+            <option value="henan">河南</option>
+            <option value="henan">北京</option>
+            <option value="henan" selected>鲁山</option>
+        </select>
+        <br>
+        <input type="hidden" name="yincang" value="yincangyu">
+        <br>
+        <!-- 隐藏域 -->
+        <!-- 确认按钮 第一种 -->
+        <button>确认</button>
+        <!-- 确认按钮 第二种 -->
+        <!-- <input type="submit" value="确认"> -->
+
+        <!-- 重置按钮 第一种 -->
+        <!-- <button>重置</button> -->
+        <!-- 重置按钮 第二种 -->
+        <input type="reset" value="点我重置">
+
+        <button type="button">普通按钮</button>
+
+        <hr>
+        <!-- 禁用表单 -->
+        账户：<input disabled type="text" placeholder="账户" value="zhangsan" maxlength="10"><br>
+        <!-- disabled 禁用表单 -->
+        密码：<input type="password" placeholder="密码" maxlength="20"><br>
+        <!-- disabled 禁用表单可以禁用任何表单按钮和内容 -->
+        籍贯：<select name="jiguan" disabled>
+            <option value="henan">河南</option>
+            <option value="henan">北京</option>
+            <option value="henan" selected>鲁山</option>
+        </select>
+    </form>
+<hr>
+
+    <!-- label  的用法 -->
+    <form action="">
+        <label for="zhanghu">账户</label>
+       <input id="zhanghu" type="text" placeholder="账户" value="zhangsan" maxlength="10"><br>
+       <!-- 用法2 -->
+       性别：<label><input type="radio" name="sex" value="nan">男</label>
+       <label><input type="radio" name="sex" value="nv" checked>女</label>
+
+
+    </form>
+    <hr>
+    <form action="">
+        <fieldset>
+            <legend>主要内容</legend>
+                <label for="zhanghu">账户</label>
+       <input id="zhanghu" type="text" placeholder="账户" value="zhangsan" maxlength="10"><br>
+       密码：<input type="password" placeholder="密码" maxlength="20"><br>
+            
+        </fieldset>
+        <fieldset>
+            <legend>附加内容</legend>
+            自我介绍：<textarea name="ziwjieshao" cols="30" rows="10"></textarea>
+            <br>
+            爱好：<input type="checkbox" name="hobby" value="smoke">吸烟
+            <input type="checkbox" name="hobby" value="drink">喝酒
+            <input type="checkbox" name="hobby" value="perm">烫头
+        </fieldset>
+
+    </form>
+</body>
+</html>

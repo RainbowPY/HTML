@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- 用法一 镶嵌网站 和广告链接（不是所有的网站都支持访问） -->
+    <iframe src="https://www.taobao.com" frameborder="0" height="300" width="900">去淘宝</iframe>
+    <!-- 用法2 嵌入其他内容  文件 图片 和压缩包 -->
+    <iframe src="../shangqiu.png" frameborder="0"></iframe>
+    <br>
+    <!-- 用法三  配合 a 标签 和input 标签使用 -->
+    <a href="https://www.toutiao.com" target="tt">去头条</a>
+    <a href="https://www.taobao.com" target="tt">去淘宝</a>
+    <form action="https://www.taobao.com/search" target="tt" >
+        <input type="text" name="keyword">
+        <button>搜索</button>
+    </form>
+    <iframe name="tt" frameborder="0" height="400" width="900"></iframe>
+</body>
+</html>

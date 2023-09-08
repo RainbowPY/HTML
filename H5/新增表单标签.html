@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!-- <form action="" novalidate>
+            novalidate 表格中所有的属性都失效
+        </form> -->
+        <label for="zh">账户：</label>
+        <input type="text" id="zh" placeholder="请输入用户名" required autofocus autocomplete="on" pattern="\w{6}"> 
+        <!-- required 为必填选项 -->
+        <!-- autofocus 自动对焦  -->
+        <!-- autocomplete="on"  开启历史记录 off 关闭 -->
+        <!-- pattern="\w{6}" 正则表达式  限制出入的 数字 字母 符号 必须为6位  必须和required一起用 -->
+        <br>
+        <label for="pwd">密码：</label>
+        <input type="password" id="pwd" placeholder="亲输入密码" required>
+        <br>
+        性别：
+        <label><input type="radio" name="sex" value="nan">男</label>
+        <label><input type="radio" name="sex" value="nv">女</label>
+        <br>
+        爱好：
+        <label><input type="checkbox" name="hobby" value="smoke">吸烟</label>
+            <label><input type="checkbox" name="hobby" value="drink">喝酒</label>
+            <label><input type="checkbox" name="hobby" value="perm">烫头</label>
+        <br>
+        <textarea name="other" ></textarea>
+        <br>
+        <hr style="background-color: red;height: 10px;">
+
+
+        <!-- input  新增属性 -->
+        邮箱：<input type="email" name="email" required >
+        <br>
+        url：<input type="url" name="url" required>
+        <br>
+        电话：<input type="tel" name="phone" required>
+        <br>
+        数字：<input type="number" name="number" required step="2" max="80" min="20">
+        <!-- step="2" 每次增加或减少2 -->
+        <br>
+        搜索：<input type="search" name="search">
+        <br>
+        范围：<input type="range" name="range" max="80" min="20" value="22">
+        <br>
+        颜色：<input type="color" name="color">
+        <br>
+        日期: <input type="date" name="date">
+        <br>
+        月份：<input type="month" name="month" >
+        <br>
+        时间：<input type="time" name="time" >
+        <br>
+        周：<input type="week" name="week" >
+        <br>
+        日期+时间：<input type="datetime-local" name="datetime">
+        <br>
+        <button>提交</button>
+    </form>
+</body>
+</html>
